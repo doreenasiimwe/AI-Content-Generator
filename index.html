@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/style.css" />
+
+    <title>AI Content Generator</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>AI Content Generator</h1>
+      </header>
+
+      <main>
+        <div class="card">
+          <p class="intro">
+            Type anything like <strong>poem</strong>, <strong>dad joke</strong>,
+            <strong>baby names</strong>, or <strong>recipes</strong> and get AI results instantly.
+          </p>
+
+          <form id="generator-form">
+            <div class="form-row">
+              <input
+                type="text"
+                id="user-input"
+                class="form-input"
+                placeholder="Type your request here..."
+                required
+                autocomplete="off"
+              />
+
+              <input type="submit" class="submit-button" value="Generate" />
+            </div>
+          </form>
+
+          <div class="hint">i.e: dad joke about school, poem about love, recipe for pasta</div>
+        </div>
+
+        <div id="result" class="result hidden"></div>
+      </main>
+
+      <footer>
+        This AI Project was coded by
+        <a href="https://github.com/doreenasiimwe" target="_blank"
+          >Asiimwe Doreen</a
+        >
+        is
+        <a
+          href="https://github.com/doreenasiimwe/AI-Content-Generator"
+          target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a
+          href="https://ai-content-generator-nine-gold.vercel.app/"
+          target="_blank"
+          >Hosted on Vercel</a
+        >
+      </footer>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
